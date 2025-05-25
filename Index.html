@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEJ Application Project</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <!-- <style> this section is comment out beacuse i have ebedded externl css which consists of same modifications
+      .item {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 20px;
+      }
+
+      .total {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 20px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 style="border-bottom: 1px solid black">TEJ Application Project</h1>
+      </div>
+
+      <!-- Samosa Section -->
+      <div class="item" id="samosa">
+        <h2>Samosa</h2>
+        <span>
+          <label>Price: </label>
+          <input type="number" id="samosa-price" />
+        </span>
+        <br /><br />
+        <span>
+          <label>Quantity: </label>
+          <button id="samosa-plus">+</button>
+          <span id="quantity-samosa">0</span>
+          <button id="samosa-minus">-</button>
+        </span>
+        <br /><br />
+        <span id="samosa-total">Total: 0</span>
+      </div>
+
+      <!-- Tea Section -->
+      <div class="item" id="tea">
+        <h2>Tea</h2>
+        <span>
+          <label>Price: </label>
+          <input type="number" id="tea-price" />
+        </span>
+        <br /><br />
+        <span>
+          <label>Quantity: </label>
+          <button id="tea-plus">+</button>
+          <span id="quantity-tea">0</span>
+          <button id="tea-minus">-</button>
+        </span>
+        <br /><br />
+        <span id="tea-total">Total: 0</span>
+      </div>
+
+      <!-- Totals -->
+      <div class="total">
+        <span id="total-price">Total price: 0</span><br /><br />
+        <span>VAT (13%): <span id="vat-total">0</span></span><br /><br />
+        <span>Tip (10%): <span id="tip-total">0</span></span><br />
+      </div>
+
+      <!-- Grand Total -->
+      <div class="grand-total">
+        <label id="grand-total-label">Grand Total: 0</label><br /><br />
+        <button id="calculate-button">Calculate grand total</button>
+      </div>
+<!--submit button-->
+                <div class="submit">
+      <button id="submit-bill">Submit Bill</button>
+    </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
